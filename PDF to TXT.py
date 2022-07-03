@@ -4,7 +4,7 @@ from PyPDF2 import PdfFileReader,PdfFileWriter
 file_path = "sample.pdf"
 pdf = PdfFileReader(file_path)
 
-#file name the converted pdf will be crated under
+#file name will be the same as the uploaded file just with a txt ending 
 file_name = file_path.strip('.pdf')+'.txt'
 
 with open(file_name, 'w') as file: 
